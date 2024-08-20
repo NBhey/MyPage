@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,6 +14,7 @@ a {
 
 body {
   background-color: black;
+  font-family: monospace;
 }
 
 .background {
@@ -27,7 +32,6 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  font-family: monospace;
 }
 
 .header__navigation {
@@ -65,21 +69,7 @@ body {
   white-space: nowrap;
   animation: typing 2.5s steps(55, end), blink-caret 0.5s step-end infinite;
 }
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
 
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-}
 
 .main-container {
   color: #fff;
@@ -100,7 +90,6 @@ body {
 .about__title {
   text-transform: uppercase;
   margin: 0 0 30px;
-  font-weight: 300;
   letter-spacing: 1px;
 }
 
@@ -118,12 +107,58 @@ body {
 
 .skills {
   padding: 100px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 1fr;
+  grid-template-areas: 
+  "title title"
+  "dev test";
+  gap: 0;
 }
 
-.skills img {
-  width: 5%;
+.skills__title {
+  grid-area: title;
 }
 
-.skills img:nth-child(5) {
-  width: 15%;
+.skills__dev {
+  grid-area: dev;
+}
+
+.skills__test {
+  grid-area: test;
+}
+
+.skills-decor {
+  
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  list-style-type: none;
+  font-size: 24px;
+
+  text-align: center;
+  justify-self: center;
+
+  flex-grow: 1;
+  color: #fff;
+
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 10.5s steps(55, end), blink-caret 0.5s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
 }
