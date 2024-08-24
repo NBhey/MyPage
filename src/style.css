@@ -172,12 +172,20 @@ body {
 }
 
 .work {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 50px;
   padding-bottom: 50px ;
   background-color: rgba(2, 2, 2, 0.904);
 }
 
+.work__title {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+}
+
 .work__example img{
-  width: 30%;
+  width: 75%;
   border-radius: 30px;
   transition: all 0.8s ease;
 }
