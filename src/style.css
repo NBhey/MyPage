@@ -172,18 +172,34 @@ body {
 }
 
 .work {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-bottom: 50px ;
+  background-color: rgba(2, 2, 2, 0.904);
+}
+
+
+.work__title {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+}
+
+.work__example-block {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 50px;
   grid-auto-rows: 1fr;
   row-gap: 50px;
-  padding-bottom: 50px ;
-  background-color: rgba(2, 2, 2, 0.904);
 }
 
-.work__title {
+.work__front {
   grid-column: 1 / span 3;
-  grid-row: 1;
+}
+
+.work__test {
+  grid-column: 1 / span 3;
+  /* grid-row: 1; */
 }
 
 .work__example img{
