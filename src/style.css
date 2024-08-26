@@ -197,6 +197,7 @@ body {
   grid-column: 1 / span 3;
 }
 
+
 .work__test {
   grid-column: 1 / span 3;
   /* grid-row: 1; */
@@ -211,4 +212,32 @@ body {
 
 .work__example img:hover{
   transform: scale(1.1);
+}
+
+.work__example_testing {
+  grid-column: span 3;
+  display: flex;
+}
+
+.work__example_testing img {
+  width: 70%;
+}
+
+.certificate {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.certificate__group {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+
+.certificate__group img {
+  width: 30%;
 }
