@@ -17,6 +17,11 @@ body {
   font-family: monospace;
 }
 
+.dark-theme {
+  background-color: wheat;
+
+}
+
 .background {
   position: absolute;
   width: 100%;
