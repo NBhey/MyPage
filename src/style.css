@@ -19,7 +19,7 @@ body {
 
 .dark-theme {
   background-color: wheat;
-
+  color: white;
 }
 
 .background {
@@ -69,7 +69,7 @@ body {
   justify-self: center;
   align-self: center;
   flex-grow: 1;
-  color: #fff;
+  /* color: #fff; */
 
   overflow: hidden;
   white-space: nowrap;
@@ -78,7 +78,7 @@ body {
 
 
 .main-container {
-  color: #fff;
+  /* color: #fff; */
   text-align: center;
 }
 
@@ -149,7 +149,7 @@ body {
   justify-self: center;
 
   flex-grow: 1;
-  color: #fff;
+  /* color: #fff; */
 
   overflow: hidden;
   white-space: nowrap;
