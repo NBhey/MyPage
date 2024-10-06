@@ -15,11 +15,16 @@ a {
 body {
   background-color: black;
   font-family: monospace;
+  color: white;
 }
 
 .dark-theme {
   background-color: wheat;
-  color: white;
+  color: black;
+}
+
+.dark-theme a {
+  color: black;
 }
 
 .background {
@@ -91,6 +96,8 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-color: #000;
+
+  color: white;
 }
 
 .about__title {
@@ -109,6 +116,8 @@ body {
   max-width: 650px;
   margin: 30px auto;
   letter-spacing: 1px;
+
+ 
 }
 
 .skills {
