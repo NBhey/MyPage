@@ -20,7 +20,6 @@ body {
 
 .dark-theme {
   background-color: wheat;
-  color: black;
 }
 
 .dark-theme a {
@@ -34,6 +33,10 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+.dark-theme .work__example-block  a {
+  color: #fff;
 }
 
 .header-container {
