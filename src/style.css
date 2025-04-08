@@ -15,6 +15,15 @@ a {
 body {
   background-color: black;
   font-family: monospace;
+  color: white;
+}
+
+.dark-theme {
+  background-color: wheat;
+}
+
+.dark-theme a {
+  color: black;
 }
 
 .background {
@@ -24,6 +33,10 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+.dark-theme .work__example-block  a {
+  color: #fff;
 }
 
 .header-container {
@@ -64,7 +77,7 @@ body {
   justify-self: center;
   align-self: center;
   flex-grow: 1;
-  color: #fff;
+  /* color: #fff; */
 
   overflow: hidden;
   white-space: nowrap;
@@ -73,7 +86,7 @@ body {
 
 
 .main-container {
-  color: #fff;
+  /* color: #fff; */
   text-align: center;
 }
 
@@ -86,6 +99,8 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-color: #000;
+
+  color: white;
 }
 
 .about__title {
@@ -104,6 +119,8 @@ body {
   max-width: 650px;
   margin: 30px auto;
   letter-spacing: 1px;
+
+ 
 }
 
 .skills {
@@ -144,7 +161,7 @@ body {
   justify-self: center;
 
   flex-grow: 1;
-  color: #fff;
+  /* color: #fff; */
 
   overflow: hidden;
   white-space: nowrap;
