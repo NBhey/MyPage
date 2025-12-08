@@ -1,39 +1,42 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: './src/index.js', // точка входа сборщика webpack
+  entry: "./src/index.js", // точка входа сборщика webpack
   output: {
     clean: true,
-    path: path.resolve(__dirname, 'prod'),
-    filename: 'main.[contenthash].js',
-    assetModuleFilename: 'assets/[name].[contenthash][ext]'
+    path: path.resolve(__dirname, "prod")
   },
   module: {
     rules: [
       {
         test: /\.html$/i,
-        use: 'html-loader',
+        use: [
+          {
+            loader: "html-loader",
+            options: { sources: true },
+          },
+        ],
       },
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        use: ["style-loader", "css-loader"],
       },
       {
         test: /\.(?:ico|gif|png|jpg|jpeg|webp)$/i,
-        type: 'asset/resource',
+        type: "asset/resource",
       },
     ],
   },
   plugins: [
     // HtmlWebpackPlugin создает index.html в директории с бандлом и автоматически добавляет в него ссылку на бандл.
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, 'index.html'), // откуда брать шаблон
+      template: path.resolve(__dirname, "index.html"), // откуда брать шаблон
     }),
   ],
   devServer: {
-    static: path.resolve(__dirname, 'prod'),
+    static: path.resolve(__dirname, "prod"),
     hot: true,
-    port: 5500
+    port: 5500,
   },
 };

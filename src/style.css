@@ -1,3 +1,5 @@
+@import url('./style/header.css');
+
 html {
   scroll-behavior: smooth;
 }
@@ -37,34 +39,6 @@ body {
 
 .dark-theme .work__example-block  a {
   color: #fff;
-}
-
-.header-container {
-  /* padding-bottom: 50px; */
-  right: 0;
-  left: 0;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.header__navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header__navigation_logo img {
-  width: 65%;
-}
-
-.header__navigation-items {
-  margin-right: 35px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 70px;
-  font-size: 22px;
 }
 
 .header__navigation-item {
@@ -257,4 +231,10 @@ body {
 
 .certificate__group img {
   width: 30%;
+}
+
+.background {
+  background-image: url('./img/converted.svg');
+  height: 100%;
+  width: 100%;
 }

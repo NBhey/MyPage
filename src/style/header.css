@@ -1,0 +1,30 @@
+.header-container {
+  width: 100%;
+}
+
+.header__navigation {
+  padding: 0 10px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__navigation__logo-wrapper {
+  max-width: 140px;
+  width: 100%;
+}
+
+.header__navigation_logo img {
+  max-width: 140px;
+  width: 100px;
+  height: 100%;
+}
+
+
+.header__navigation-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+  font-size: 1rem;
+}
