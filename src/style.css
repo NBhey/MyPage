@@ -1,4 +1,5 @@
 @import url('./style/header.css');
+@import url('./style/toogle.css');
 
 html {
   scroll-behavior: smooth;
@@ -26,6 +27,16 @@ body {
 
 .dark-theme a {
   color: black;
+}
+
+#theme-toggle {
+  height: 60px;
+  width: 30px;
+  position: fixed;
+  top: 50vh;
+  right: 0;
+  cursor: pointer;
+
 }
 
 .background {
@@ -231,10 +242,4 @@ body {
 
 .certificate__group img {
   width: 30%;
-}
-
-.background {
-  background-image: url('./img/converted.svg');
-  height: 100%;
-  width: 100%;
 }
