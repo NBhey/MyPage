@@ -1,0 +1,26 @@
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+}
+
+
+@media (max-width: 768px) {
+    .skill-title {
+        font-size: 20px;
+    }
+
+    .skill {
+        font-size: 18px;
+    }
+}
