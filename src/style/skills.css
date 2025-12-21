@@ -1,7 +1,7 @@
 .skills {
   margin: 0 auto;
   max-width: 1200px;
-  padding: 100px 0 50px;
+  padding: 50px 0 50px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 50px 1fr;

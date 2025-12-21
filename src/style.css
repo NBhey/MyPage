@@ -155,3 +155,12 @@ body {
 .certificate__group img {
   width: 30%;
 }
+
+@media (max-width: 769px) {
+  .active_menu {
+    display: flex;
+    position: absolute;
+    transition: line-height 0.5s, color 0.5s;
+    
+  }
+}
