@@ -161,6 +161,8 @@ body {
     display: flex;
     position: absolute;
     transition: line-height 0.5s, color 0.5s;
-    
+    line-height: 1.2;
   }
+
+
 }

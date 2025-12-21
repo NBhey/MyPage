@@ -34,7 +34,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 767px) {
   .header__navigation {
     position: relative;
   }
@@ -58,5 +58,7 @@
 
   .header__burger {
     display: block;
+    width: 35px;
+    height: 35px;
   }
 }
