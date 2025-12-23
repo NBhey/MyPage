@@ -119,9 +119,8 @@ body {
 }
 
 .work__example img {
-  padding-bottom: 15px;
   width: 75%;
-  border-radius: 30px;
+  border-radius: 10px;
   transition: all 0.8s ease;
 }
 

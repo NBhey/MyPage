@@ -39,10 +39,23 @@
   animation: typing 5.5s steps(55, end), blink-caret 0.5s step-end infinite;
 }
 
-.skills-decor h3 {
+.skill-title {
   margin-bottom: 15px;
+  text-decoration: underline
 }
 
 .skill {
   white-space: break-spaces;
+}
+
+@media (max-width: 767px) {
+  .skills {
+     grid-template-areas:
+    "title"
+    "dev"
+    "test";
+
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
 }
