@@ -71,6 +71,12 @@ body {
   color: white;
 }
 
+@media (max-width: 767px) {
+  .about{
+    background-attachment:local;
+  }
+}
+
 .about__title {
   text-transform: uppercase;
   margin: 0 0 30px;
