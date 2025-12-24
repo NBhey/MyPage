@@ -2,6 +2,7 @@
 @import url("./style/header.css");
 @import url("./style/skills.css");
 @import url("./style/animation.css");
+@import url("./style/work.css");
 
 html {
   scroll-behavior: smooth;
@@ -18,6 +19,8 @@ a {
 }
 
 body {
+  max-width: 100%;
+  overflow-x: hidden;
   background-color: black;
   font-family: monospace;
   color: white;
@@ -49,12 +52,11 @@ body {
   z-index: -1;
 }
 
-.dark-theme .work__example-block a {
+.dark-theme a {
   color: #fff;
 }
 
 .main-container {
-  /* color: #fff; */
   text-align: center;
 }
 
@@ -95,53 +97,7 @@ body {
   letter-spacing: 1px;
 }
 
-.work {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  padding-bottom: 50px;
-  background-color: rgba(2, 2, 2, 0.904);
-}
 
-.work__title {
-  grid-column: 1 / span 3;
-  grid-row: 1;
-}
-
-.work__example-block {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 50px;
-  grid-auto-rows: 1fr;
-  row-gap: 50px;
-}
-
-.work__front {
-  grid-column: 1 / span 3;
-}
-
-.work__test {
-  grid-column: 1 / span 3;
-}
-
-.work__example img {
-  width: 75%;
-  border-radius: 10px;
-  transition: all 0.8s ease;
-}
-
-.work__example img:hover {
-  transform: scale(1.1);
-}
-
-.work__example_testing {
-  grid-column: span 3;
-  display: flex;
-}
-
-.work__example_testing img {
-  width: 70%;
-}
 
 .certificate {
   margin: 0 auto;

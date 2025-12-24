@@ -1,5 +1,5 @@
 import "./style.css";
-
+import './js/dragToScroll'
 if (localStorage.getItem("theme") === "false") {
   document.body.classList.add("dark-theme");
 }
@@ -24,3 +24,5 @@ burger.addEventListener("click", () => {
   }
   console.log(123);
 });
+
+
