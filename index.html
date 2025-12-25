@@ -4,243 +4,264 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/jpg" href="./src/img/icon.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <title>NBhey</title>
   </head>
   <body>
-    <div class="background">
-      <div class="toggle">
-        <input id="toogle-theme" type="checkbox" />
-        <label></label>
-      </div>
-      <header class="header-container">
-        <nav class="header__navigation">
-          <a class="header__navigation_logo" href="#">
-            <img src="./src/img/logo4.png" alt="logo" />
-          </a>
-          <ul class="header__navigation-items">
-            <li class="header__navigation-item"><a href="#about">О себе</a></li>
-            <li class="header__navigation-item">
-              <a href="#skills">Навыки</a>
-            </li>
-            <li class="header__navigation-item">
-              <a href="#work">Мои работы</a>
-            </li>
-            <li class="header__navigation-item">
-              <a href="#certificate">Сертификаты/дипломы</a>
-            </li>
-          </ul>
-          <button aria-expanded="false" id="burger" class="header__burger">
-            <img
-              style="color: aliceblue; width: 30px; height: 30px"
-              src="./src/img/icon/burger-menu.svg"
-              alt="menu"
-            />
-          </button>
-        </nav>
-      </header>
-      <main id="main" class="main-container">
-        <section id="about" class="about">
-          <h2 class="about__title">Немного о себе</h2>
-          <img src="./src/img/me.jpeg" alt="me" />
-          <p class="about__someword">
-            Привет, меня зовут Оганес. <br />
+    <div id="tsparticles"></div>
+    <div class="toggle">
+      <input id="toogle-theme" type="checkbox" />
+      <label></label>
+    </div>
+    <header class="header-container">
+      <nav class="header__navigation">
+        <a class="header__navigation_logo" href="#">
+          <img src="./src/img/logo4.png" alt="logo" />
+        </a>
+        <ul class="header__navigation-items">
+          <li class="header__navigation-item"><a href="#about">О себе</a></li>
+          <li class="header__navigation-item">
+            <a href="#skills">Навыки</a>
+          </li>
+          <li class="header__navigation-item">
+            <a href="#work">Мои работы</a>
+          </li>
+          <li class="header__navigation-item">
+            <a href="#certificate">Сертификаты/дипломы</a>
+          </li>
+        </ul>
+        <button aria-expanded="false" id="burger" class="header__burger">
+          <img
+            style="color: aliceblue; width: 30px; height: 30px"
+            src="./src/img/icon/burger-menu.svg"
+            alt="menu"
+          />
+        </button>
+      </nav>
+    </header>
+    <main id="main" class="main-container">
+      <section id="about" class="about">
+        <h2 class="about__title">Немного о себе</h2>
+        <img src="./src/img/me.jpeg" alt="me" />
+        <p class="about__someword">
+          Привет, меня зовут Оганес. <br />
 
-            По образованию инженер-теплоэнергетик. Три года работал в инженерной
-            сфере на разных направлениях, а затем четыре года занимал
-            управленческие должности в морском деле. Программированием увлекаюсь
-            и занимаюсь около двух лет.
-          </p>
-        </section>
-        <section id="skills" class="skills">
-          <h2 class="skills__title">Навыки, которыми обладаю</h2>
-          <ul class="skills__dev skills-decor">
-            <h3 class="skill-title">Frontend разработка</h3>
-            <li class="skill">HTML,CSS,JavaScript,TypeScript</li>
-            <li class="skill">React,Next,Vue,Nuxt</li>
-            <li class="skill">БЭМ</li>
-            <li class="skill">Bootstrap,Tailwind</li>
-            <li class="skill">Less</li>
-            <li class="skill">Webpack</li>
-            <li class="skill">Jest</li>
-            <li class="skill">Git, Github</li>
-            <li class="skill">Eslint</li>
-          </ul>
-          <ul class="skills__test skills-decor">
-            <h3 class="skill-title">Тестирование</h3>
-            <li class="skill">Теория тестирования</li>
-            <li class="skill">Git, Github</li>
-            <li class="skill">SQL</li>
-            <li class="skill">REST, HTTP/HTTPS, Клиент-сервер</li>
-            <li class="skill">Postman</li>
-          </ul>
-        </section>
-        <section id="work" class="work">
-          <h2 class="work__title">Мои работы</h2>
-          <div class="work__example-frontend">
-            <h3 class="work__front">Frontend</h3>
-            <div class="work__example-scroll">
-              <article class="work__example">
+          По образованию инженер-теплоэнергетик. Три года работал в инженерной
+          сфере на разных направлениях, а затем четыре года занимал
+          управленческие должности в морском деле. Программированием увлекаюсь и
+          занимаюсь около двух лет.
+        </p>
+      </section>
+      <section id="skills" class="skills">
+        <h2 class="skills__title">Навыки, которыми обладаю</h2>
+        <ul class="skills__dev skills-decor">
+          <h3 class="skill-title">Frontend разработка</h3>
+          <li class="skill">HTML,CSS,JavaScript,TypeScript</li>
+          <li class="skill">React,Next,Vue,Nuxt</li>
+          <li class="skill">БЭМ</li>
+          <li class="skill">Bootstrap,Tailwind</li>
+          <li class="skill">Less</li>
+          <li class="skill">Webpack</li>
+          <li class="skill">Jest</li>
+          <li class="skill">Git, Github</li>
+          <li class="skill">Eslint</li>
+        </ul>
+        <ul class="skills__test skills-decor">
+          <h3 class="skill-title">Тестирование</h3>
+          <li class="skill">Теория тестирования</li>
+          <li class="skill">Git, Github</li>
+          <li class="skill">SQL</li>
+          <li class="skill">REST, HTTP/HTTPS, Клиент-сервер</li>
+          <li class="skill">Postman</li>
+        </ul>
+      </section>
+      <section id="work" class="work">
+        <h2 class="work__title">Мои работы</h2>
+        <div class="work__example-frontend">
+          <h3 class="work__front">Frontend</h3>
+          <div class="work__example-scroll">
+            <article class="work__example">
+              <a
+                href="https://nbhey.github.io/css-Markarian-Tridrikh/"
+                target="_blank"
+              >
+                <img src="./src/workPageScreen/ModStudio.jpg" alt="ModStudio" />
+              </a>
+              <p>
+                Языки: HTML, CSS; <br />
+                Технологии: Webpack, Bootstrap, Tailwind, NPM, Less; <br />
+                Разрешение: Desktop, Laptop; <br />
+                Репозиторий:
                 <a
-                  href="https://nbhey.github.io/css-Markarian-Tridrikh/"
+                  href="https://github.com/NBhey/otus-css-Markarian-Tridrikh"
                   target="_blank"
+                  >тут</a
                 >
-                  <img
-                    src="./src/workPageScreen/ModStudio.jpg"
-                    alt="ModStudio"
-                  />
-                </a>
-                <p>
-                  Языки: HTML, CSS; <br />
-                  Технологии: Webpack, Bootstrap, Tailwind, NPM, Less; <br />
-                  Разрешение: Desktop, Laptop; <br />
-                  Репозиторий:
-                  <a
-                    href="https://github.com/NBhey/otus-css-Markarian-Tridrikh"
-                    target="_blank"
-                    >тут</a
-                  >
-                </p>
-              </article>
-              <article class="work__example">
+              </p>
+            </article>
+            <article class="work__example">
+              <a
+                href="https://nbhey.github.io/Pet-Project1-HTML-CSS/"
+                target="_blank"
+              >
+                <img
+                  src="./src/workPageScreen/GusetHouse.jpg"
+                  alt="GuestHouse"
+                />
+              </a>
+              <p>
+                Языки: HTML, CSS; <br />
+                Технологии: БЭМ, Webpack, NPM; <br />
+                Разрешение: Desktop; <br />
+                Репозиторий:
                 <a
-                  href="https://nbhey.github.io/Pet-Project1-HTML-CSS/"
+                  href="https://github.com/NBhey/Pet-Project1-HTML-CSS"
                   target="_blank"
+                  >тут</a
                 >
-                  <img
-                    src="./src/workPageScreen/GusetHouse.jpg"
-                    alt="GuestHouse"
-                  />
-                </a>
-                <p>
-                  Языки: HTML, CSS; <br />
-                  Технологии: БЭМ, Webpack, NPM; <br />
-                  Разрешение: Desktop; <br />
-                  Репозиторий:
-                  <a
-                    href="https://github.com/NBhey/Pet-Project1-HTML-CSS"
-                    target="_blank"
-                    >тут</a
-                  >
-                </p>
-              </article>
-              <article class="work__example">
-                <a href="https://nbhey.github.io/WeatherApp/" target="_blank">
-                  <img
-                    src="./src/workPageScreen/WeatherApp.jpg"
-                    alt="WeatherApp"
-                  />
-                </a>
-                <p>
-                  Языки: HTML, CSS, JS;<br />
-                  Технологии: Eslint, Webpack, Jest, Babel, NPM;<br />
-                  Разрешение: Desktop; <br />
-                  Репозиторий:
-                  <a href="https://github.com/NBhey/WeatherApp" target="_blank"
-                    >тут</a
-                  >
-                </p>
-              </article>
-              <article class="work__example">
+              </p>
+            </article>
+            <article class="work__example">
+              <a href="https://nbhey.github.io/WeatherApp/" target="_blank">
+                <img
+                  src="./src/workPageScreen/WeatherApp.jpg"
+                  alt="WeatherApp"
+                />
+              </a>
+              <p>
+                Языки: HTML, CSS, JS;<br />
+                Технологии: Eslint, Webpack, Jest, Babel, NPM;<br />
+                Разрешение: Desktop; <br />
+                Репозиторий:
+                <a href="https://github.com/NBhey/WeatherApp" target="_blank"
+                  >тут</a
+                >
+              </p>
+            </article>
+            <article class="work__example">
+              <a
+                href="https://nbhey.github.io/Rocket-Business-/"
+                target="_blank"
+              >
+                <img src="./src/workPageScreen/Clinic.jpg" alt="Clinic" />
+              </a>
+              <p>
+                Языки: HTML, CSS, JS, PHP;<br />
+                Технологии: Webpack, Jest, Babel, NPM;<br />
+                Разрешение: Desktop, Mobile; <br />
+                Репозиторий:
                 <a
-                  href="https://nbhey.github.io/Rocket-Business-/"
+                  href="https://github.com/NBhey/Rocket-Business-"
                   target="_blank"
+                  >тут</a
                 >
-                  <img src="./src/workPageScreen/Clinic.jpg" alt="Clinic" />
-                </a>
-                <p>
-                  Языки: HTML, CSS, JS, PHP;<br />
-                  Технологии: Webpack, Jest, Babel, NPM;<br />
-                  Разрешение: Desktop, Mobile; <br />
-                  Репозиторий:
-                  <a
-                    href="https://github.com/NBhey/Rocket-Business-"
-                    target="_blank"
-                    >тут</a
-                  >
-                </p>
-              </article>
-              <article class="work__example">
-                <a href="https://nbhey.github.io/MyPage/" target="_blank">
-                  <img src="./src/workPageScreen/Card.jpg" alt="Card" />
-                </a>
-                <p>
-                  Языки: HTML, CSS, JS, PHP;<br />
-                  Технологии: Webpack, NPM;<br />
-                  Разрешение: Desktop; <br />
-                  Репозиторий:
-                  <a href="https://github.com/NBhey/MyPage" target="_blank"
-                    >тут</a
-                  >
-                </p>
-              </article>
-              <article class="work__example">
+              </p>
+            </article>
+            <article class="work__example">
+              <a href="https://nbhey.github.io/MyPage/" target="_blank">
+                <img src="./src/workPageScreen/Card.jpg" alt="Card" />
+              </a>
+              <p>
+                Языки: HTML, CSS, JS, PHP;<br />
+                Технологии: Webpack, NPM;<br />
+                Разрешение: Desktop; <br />
+                Репозиторий:
+                <a href="https://github.com/NBhey/MyPage" target="_blank"
+                  >тут</a
+                >
+              </p>
+            </article>
+            <article class="work__example">
+              <a
+                href="https://nbhey.github.io/Gallows-JS-game/"
+                target="_blank"
+              >
+                <img src="./src/workPageScreen/Виселица.jpg" alt="Виселица" />
+              </a>
+              <p>
+                Языки: JS;<br />
+                Технологии: Webpack;<br />
+                Разрешение: Desktop/Mobile; <br />
+                Репозиторий:
                 <a
-                  href="https://nbhey.github.io/Gallows-JS-game/"
+                  href="https://github.com/NBhey/Gallows-JS-game"
                   target="_blank"
+                  >тут</a
                 >
-                  <img src="./src/workPageScreen/Виселица.jpg" alt="Виселица" />
-                </a>
-                <p>
-                  Языки: JS;<br />
-                  Технологии: Webpack;<br />
-                  Разрешение: Desktop/Mobile; <br />
-                  Репозиторий:
-                  <a
-                    href="https://github.com/NBhey/Gallows-JS-game"
-                    target="_blank"
-                    >тут</a
-                  >
-                </p>
-              </article>
-            </div>
-          </div>
-          <div class="work__example-block">
-            <h3 class="work__test">Тестирование</h3>
-            <article class="work__example work__example_testing">
-              <div class="work__example-main">
-                <a href="https://test-powerbank.astondevs.ru/" target="_blank">
-                  <img src="./src/workPageScreen/TestingPB.jpg" alt="TestPB" />
-                </a>
-              </div>
-
-              <div class="work__example-report">
-                <a
-                  href="https://docs.google.com/spreadsheets/d/1zPsYTUNOdaKljgxYOju_Kyk9_f2y9dJOHyh4676Mbn0/edit"
-                  target="_blank"
-                >
-                  <img
-                    src="./src/workPageScreen/BugReport1.jpg"
-                    alt="Bug report"
-                  />
-                </a>
-              </div>
+              </p>
             </article>
           </div>
-        </section>
-        <section id="certificate" class="certificate">
-          <h2 class="certificate__title">Сертификаты</h2>
-          <div class="certificate__group">
-            <img src="/src/certificateImage/OTUS_HTML_CSS.jpg" alt="HTML_CSS" />
-            <img
-              src="/src/certificateImage/Netology_Adaptive_and_mobile.jpg"
-              alt="Adaptive_and_Mobile"
-            />
-            <img
-              src="/src/certificateImage/Netology_HTML_layout.jpg"
-              alt="HTML_layout"
-            />
-            <img
-              src="/src/certificateImage/Stepik_Testing.jpg"
-              alt="Stepik_Testing"
-            />
-            <img
-              src="/src/certificateImage/Netology_Base_Programming.jpg"
-              alt="Netology_Base_Programming"
-            />
-            <img src="/src/certificateImage/JS Basic.jpg" alt="JS_Basic" />
+        </div>
+        <div class="work__example-block">
+          <h3 class="work__test">Тестирование</h3>
+          <article class="work__example work__example_testing">
+            <div class="work__example-main">
+              <a href="https://test-powerbank.astondevs.ru/" target="_blank">
+                <img src="./src/workPageScreen/TestingPB.jpg" alt="TestPB" />
+              </a>
+            </div>
+
+            <div class="work__example-report">
+              <a
+                href="https://docs.google.com/spreadsheets/d/1zPsYTUNOdaKljgxYOju_Kyk9_f2y9dJOHyh4676Mbn0/edit"
+                target="_blank"
+              >
+                <img
+                  src="./src/workPageScreen/BugReport1.jpg"
+                  alt="Bug report"
+                />
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="certificate" class="certificate">
+        <h2 class="certificate__title">Сертификаты</h2>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="/src/certificateImage/OTUS_HTML_CSS.jpg"
+                alt="HTML_CSS"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="/src/certificateImage/Netology_Adaptive_and_mobile.jpg"
+                alt="Adaptive_and_Mobile"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="/src/certificateImage/Netology_HTML_layout.jpg"
+                alt="HTML_layout"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="/src/certificateImage/Stepik_Testing.jpg"
+                alt="Stepik_Testing"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="/src/certificateImage/Netology_Base_Programming.jpg"
+                alt="Netology_Base_Programming"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img src="/src/certificateImage/JS Basic.jpg" alt="JS_Basic" />
+            </div>
           </div>
-        </section>
-      </main>
-    </div>
+        </div>
+      
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
   </body>
 </html>

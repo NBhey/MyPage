@@ -1,5 +1,7 @@
 import "./style.css";
 import './js/dragToScroll'
+import './js/swiper'
+
 if (localStorage.getItem("theme") === "false") {
   document.body.classList.add("dark-theme");
 }
@@ -22,7 +24,7 @@ burger.addEventListener("click", () => {
   } else {
     burger.setAttribute("aria-expanded", "false");
   }
-  console.log(123);
+
 });
 
 

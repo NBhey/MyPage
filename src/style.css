@@ -3,6 +3,7 @@
 @import url("./style/skills.css");
 @import url("./style/animation.css");
 @import url("./style/work.css");
+@import url("./style/swiper.css");
 
 html {
   scroll-behavior: smooth;
@@ -41,15 +42,6 @@ body {
   top: 50vh;
   right: 0;
   cursor: pointer;
-}
-
-.background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
 }
 
 .dark-theme a {
