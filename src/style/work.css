@@ -37,7 +37,8 @@
 
 .work__example-block {
   display: flex;
- flex-direction: column;
+  flex-direction: column;
+  align-items: center;
 }
 
 .work__front {
@@ -45,7 +46,7 @@
 }
 
 .work__test {
-  grid-column: 1 / span 3;
+  margin: 0 0 24px;
 }
 
 .work__example {
@@ -60,12 +61,18 @@
 }
 
 .work__example_testing {
-  grid-column: span 3;
   display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.work__example_testing > div {
+  flex: 1;
 }
 
 .work__example_testing img {
-  width: 70%;
+  width: 100%;
+  border-radius: 10px;
 }
 
 @media (hover: hover) {
@@ -77,5 +84,14 @@
 @media (max-width: 769px) {
   .work__example-scroll {
     overflow-x: auto;
+  }
+
+  .work__example_testing {
+    flex-direction: column;
+  }
+
+  .work__example_testing img {
+    width: 75%;
+    border-radius: 10px;
   }
 }
