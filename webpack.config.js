@@ -23,7 +23,7 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(?:ico|gif|png|jpg|jpeg|webp)$/i,
+        test: /\.(?:ico|gif|svg|png|jpg|jpeg|webp)$/i,
         type: "asset/resource",
       },
     ],
